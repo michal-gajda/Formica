@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/WebApi/">
+    <Project Path="src/WebApi/Formica.WebApi.csproj" />
+  </Folder>
+  <Folder Name="/src/WebUI/">
+    <Project Path="src/WebUI/Formica.WebUI.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/WebUI.E2ETests/">
+    <Project Path="tests/WebUI.E2ETests/Formica.WebUI.E2ETests.csproj" />
+  </Folder>
+</Solution>
