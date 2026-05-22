@@ -2,7 +2,7 @@ namespace Formica.WebApi;
 
 public static class Program
 {
-    public static async Task Main(string[] args)
+    public static async Task<int> Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +29,15 @@ public static class Program
 
         app.MapFallbackToFile("index.html");
 
-        await app.RunAsync();
+        try
+        {
+            await app.RunAsync();
+        }
+        catch (OperationCanceledException)
+        {
+            //
+        }
+
+        return 0;
     }
 }
